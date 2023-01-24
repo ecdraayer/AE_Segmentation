@@ -5,6 +5,7 @@ import os
 import csv
 
 
+
 def get_daily_sports_timeseries(path, person, activities, durations):
     directory = path
     daily_sports_data = []
@@ -31,13 +32,12 @@ def construct_daily_sports_activity(daily_sports_data, activities, durations):
     time_series = []
     labels = []
 
-    for activity in activities:
-        for duration in durations:
-            clips = np.random.randint(low=0, high=60, size=duration)
-            for n in range(duration * 125):
-                labels.append(activity)
-            for clip in clips:
-                time_series.append(daily_sports_data[activity][clip])
+    for i, activity in enumerate(activities):
+        clips = np.random.randint(low=0, high=60, size=durations[i])
+        for n in range(durations[i] * 125):
+            labels.append(activity)
+        for clip in clips:
+            time_series.append(daily_sports_data[activity][clip])
 
     time_series = [item for sublist in time_series for item in sublist]
 
