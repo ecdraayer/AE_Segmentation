@@ -1,1 +1,1 @@
-# Welcome to the Repository of Deep Clustering for Time Series Segmentation!
+## Welcome to the Repository of Deep Clustering for Time Series Segmentation!
