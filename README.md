@@ -1,2 +1,2 @@
-# Welcome to the Repository of Deep Clustering for Time Series Segmentation!
+# Deep Clustering for Time Series Segmentation (DC-TSS)
 
